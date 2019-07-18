@@ -1,3 +1,4 @@
 import React from "react"
+import GoogleMap from "../components/GoogleMap"
 
-export default () => <div>Hello world!</div>
+export default () => <GoogleMap />
