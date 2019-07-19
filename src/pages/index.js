@@ -1,4 +1,5 @@
 import React from "react"
-import GoogleMap from "../components/GoogleMap"
+// import GoogleMap from "../components/GoogleMap"
+import Gallery from "../components/Gallery"
 
-export default () => <GoogleMap />
+export default () => <Gallery />
