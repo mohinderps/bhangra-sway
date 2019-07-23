@@ -4,11 +4,9 @@ import styled from "styled-components"
 
 const VideoBackgroundStyledDiv = styled.div`
   background: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   z-index: -99;
 
   &:after {
@@ -20,7 +18,7 @@ const VideoBackgroundStyledDiv = styled.div`
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.5);
   }
 `
 
