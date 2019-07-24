@@ -1,12 +1,13 @@
 import React from "react"
 import GoogleMap from "./GoogleMap"
 import AboutUs from "./AboutAcademy"
-// const imag = require("../../public/phoneImage.png")
+import Header from "../components/Header"
 const ContactUs = () => (
   <div>
+    <Header />
     <h1 align="center">CONTACT US</h1>
     <div
-      class="container"
+      className="container"
       style={{
         display: "flex",
         justifyContent: "space-around",
@@ -39,7 +40,14 @@ const ContactUs = () => (
         <p>99988841256</p>
       </div>
     </div>
-    <div>
+    <div
+      style={{
+        width: "80%",
+        margin: "20px auto",
+        position: "relative",
+        height: "400px",
+      }}
+    >
       <GoogleMap />
     </div>
   </div>
