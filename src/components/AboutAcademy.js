@@ -8,3 +8,5 @@ const AboutAcademy = () => (
     sessions.
   </div>
 )
+
+export default AboutAcademy;
