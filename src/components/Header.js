@@ -1,60 +1,60 @@
 import React from "react"
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import styled from "styled-components"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-import AboutAcademy from "../components/AboutAcademy"
-import { Link } from "gatsby"
+const StyledHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+`
 
-const Header = props => {
+const StyledNavigation = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+`
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+  margin-left: 20px;
+  text-transform: uppercase;
+`
+
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "logo/logo.png" }) {
+        childImageSharp {
+          fixed(width: 60, height: 60) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
   return (
-    <nav>
-      <div
-        className="nav-wrapper"
-        style={{
-          backgroundColor: "black",
-          color: "white",
-          fontSize: "20px",
-          height: "64px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <img
-          src="/bhangraswaylogo.png"
-          style={{
-            height: "52px",
-            marginLeft: "20px",
-            marginTop: "6px",
-          }}
-        ></img>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            width: "35%",
-            alignItems: "center",
-          }}
-        >
-          <Link style={{ color: "white" }} to="/">
-            Home
-          </Link>
-          <Link style={{ color: "white" }} to="/contact/">
-            Contact
-          </Link>
-          <Link style={{ color: "white" }} to="/contact/">
-            Services
-          </Link>
-          <Link style={{ color: "white" }} to="/about/">
-            About
-          </Link>
-          <Link style={{ color: "white" }} to="/contact/">
-            Demo
-          </Link>
-          <Link style={{ color: "white" }} to="/contact/">
-            Videos
-          </Link>
-        </div>
-      </div>
-    </nav>
+    <StyledHeader>
+      <Img fixed={data.file.childImageSharp.fixed} alt="Bhangra Sway Logo" />
+      <StyledNavigation>
+        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/services">Services</StyledLink>
+        <StyledLink to="/contact">Contact</StyledLink>
+        <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="/demo">Demo</StyledLink>
+        <StyledLink to="/videos">Videos</StyledLink>
+      </StyledNavigation>
+    </StyledHeader>
   )
 }
 
