@@ -45,11 +45,21 @@ const Showcase = () => {
 
   return (
     <div>
-      <Showpiece image={data.competition.childImageSharp.fluid} />
-      <Showpiece image={data.family.childImageSharp.fluid} />
-      <Showpiece image={data.festival.childImageSharp.fluid} />
-      <Showpiece image={data.performance.childImageSharp.fluid} />
-      <Showpiece image={data.workshop.childImageSharp.fluid} />
+      <Showpiece image={data.competition.childImageSharp.fluid} text="abc" />
+      {/* <Showpiece image={data.family.childImageSharp.fluid} text="abc" /> */}
+      <Showpiece
+        image={data.festival.childImageSharp.fluid}
+        text="abc"
+        reverse
+      />
+      <Showpiece image={data.performance.childImageSharp.fluid} text="abc" />
+      <Showpiece
+        image={data.workshop.childImageSharp.fluid}
+        text="abc"
+        reverse
+      />
+      {/* <Img fixed={data.competition.childImageSharp.fixed} /> */}
+      {/* <Img fluid={data.festival.childImageSharp.fluid} /> */}
     </div>
   )
 }

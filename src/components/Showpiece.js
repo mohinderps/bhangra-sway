@@ -3,14 +3,27 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledDiv = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  display: flex;
 `
 
-const Showpiece = ({ image }) => {
+const ImageContainer = styled.div`
+  flex-basis: 60%;
+  order: ${props => (props.reverse ? 2 : 1)};
+`
+
+const TextContainer = styled.div`
+  flex-basis: 40%;
+  order: ${props => (props.reverse ? 1 : 2)};
+`
+
+const Showpiece = ({ image, text, reverse }) => {
   return (
     <StyledDiv>
-      <Img fluid={image} />
+      <ImageContainer reverse={reverse}>
+        <Img fluid={image} />
+      </ImageContainer>
+      <TextContainer reverse={reverse}>TextContainer</TextContainer>
     </StyledDiv>
   )
 }
