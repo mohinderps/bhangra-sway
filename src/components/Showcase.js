@@ -1,6 +1,13 @@
 import React from "react"
 import Showpiece from "./Showpiece"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+
+const StyledDiv = styled.div`
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+`
 
 const Showcase = () => {
   const data = useStaticQuery(graphql`
@@ -44,7 +51,7 @@ const Showcase = () => {
   `)
 
   return (
-    <div>
+    <StyledDiv>
       <Showpiece image={data.competition.childImageSharp.fluid} text="abc" />
       {/* <Showpiece image={data.family.childImageSharp.fluid} text="abc" /> */}
       <Showpiece
@@ -58,9 +65,7 @@ const Showcase = () => {
         text="abc"
         reverse
       />
-      {/* <Img fixed={data.competition.childImageSharp.fixed} /> */}
-      {/* <Img fluid={data.festival.childImageSharp.fluid} /> */}
-    </div>
+    </StyledDiv>
   )
 }
 

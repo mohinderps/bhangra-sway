@@ -5,6 +5,7 @@ import styled from "styled-components"
 const StyledDiv = styled.div`
   width: 100%;
   display: flex;
+  padding-bottom: 160px;
 `
 
 const ImageContainer = styled.div`
@@ -15,6 +16,9 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   flex-basis: 40%;
   order: ${props => (props.reverse ? 1 : 2)};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const Showpiece = ({ image, text, reverse }) => {
