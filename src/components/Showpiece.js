@@ -27,7 +27,7 @@ const Showpiece = ({ image, text, reverse }) => {
       <ImageContainer reverse={reverse}>
         <Img fluid={image} />
       </ImageContainer>
-      <TextContainer reverse={reverse}>TextContainer</TextContainer>
+      <TextContainer reverse={reverse}>{text}</TextContainer>
     </StyledDiv>
   )
 }
