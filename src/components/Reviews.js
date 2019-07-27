@@ -18,8 +18,8 @@ const Reviews = () => (
       height="199"
       style={{ border: "none", overflow: "hidden" }}
       scrolling="no"
-      frameborder="0"
-      allowTransparency="true"
+      frameBorder="0"
+      allowtransparency="true"
       allow="encrypted-media"
     ></iframe>
     <iframe
@@ -28,8 +28,8 @@ const Reviews = () => (
       height="199"
       style={{ border: "none", overflow: "hidden" }}
       scrolling="no"
-      frameborder="0"
-      allowTransparency="true"
+      frameBorder="0"
+      allowtransparency="true"
       allow="encrypted-media"
     ></iframe>
     <iframe
@@ -38,8 +38,8 @@ const Reviews = () => (
       height="142"
       style={{ border: "none", overflow: "hidden" }}
       scrolling="no"
-      frameborder="0"
-      allowTransparency="true"
+      frameBorder="0"
+      allowtransparency="true"
       allow="encrypted-media"
     ></iframe>
     <iframe
@@ -48,8 +48,8 @@ const Reviews = () => (
       height="161"
       style={{ border: "none", overflow: "hidden" }}
       scrolling="no"
-      frameborder="0"
-      allowTransparency="true"
+      frameBorder="0"
+      allowtransparency="true"
       allow="encrypted-media"
     ></iframe>
   </Wrapper>
