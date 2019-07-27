@@ -4,14 +4,17 @@ import Reviews from "../components/Reviews"
 import Packages from "../components/Packages"
 import Hero from "../components/Hero"
 import Header from "../components/Header"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
+import SayHi from "../components/SayHi"
+// import GoogleMap from "../components/GoogleMap"
 
 export default () => (
   <div>
     <Hero />
     <Showcase />
     <Reviews />
-    <Packages />
-    <Footer />
+    <SayHi />
+    {/* <Packages /> */}
+    {/* <Footer /> */}
   </div>
 )
