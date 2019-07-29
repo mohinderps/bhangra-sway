@@ -7,6 +7,7 @@ const StyledDiv = styled.div`
   height: 500px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 `
 
 const SayHi = () => (
