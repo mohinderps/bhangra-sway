@@ -1,19 +1,8 @@
 import React from "react"
 import Showpiece from "./Showpiece"
 import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 import Img from "gatsby-image"
-
-const StyledDiv = styled.div`
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-`
-
-const Title = styled.div`
-  margin-bottom: 60px;
-  text-align: center;
-`
+import { Box } from "rebass"
 
 const Showcase = () => {
   const data = useStaticQuery(graphql`
@@ -57,13 +46,12 @@ const Showcase = () => {
   `)
 
   return (
-    <div>
-      <StyledDiv>
+    <Box py={50}>
+      <Box width={4 / 5} ml="auto" mr="auto">
         <Showpiece
           image={data.competition.childImageSharp.fluid}
           text="We participate in competitions"
         />
-        {/* <Showpiece image={data.family.childImageSharp.fluid} text="abc" /> */}
         <Showpiece
           image={data.festival.childImageSharp.fluid}
           text="We celebrate festivals"
@@ -78,13 +66,12 @@ const Showcase = () => {
           text="We give workshops"
           reverse
         />
-        <Title>We are Bhangra Sway Family</Title>
         <Img
           fluid={data.family.childImageSharp.fluid}
           alt="Bhangra Sway Family"
         />
-      </StyledDiv>
-    </div>
+      </Box>
+    </Box>
   )
 }
 

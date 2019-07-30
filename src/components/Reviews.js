@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Box } from "rebass"
+import { Flex, Box, Heading } from "rebass"
 import ReviewCard from "./ReviewCard"
 
 const reviews = [
@@ -13,7 +13,7 @@ const reviews = [
     id: 2,
     reviewedBy: "Himanshu Goyal",
     reviewText:
-      "One of the best academy I have ever been to with a beautiful and good location, where one can release his/her stress, recommended for Bhangra lovers and the corporate guys!! Must visit place! Keep it up guys, nice start! ",
+      "One of the best academy I have ever been to with a beautiful and good location, where one can release his/her stress, recommended for Bhangra lovers and the corporate guys!! Must visit place! Keep it up guys, nice start!",
   },
   {
     id: 3,
@@ -30,30 +30,41 @@ const reviews = [
 ]
 
 const Reviews = () => (
-  <Box width={4 / 5} ml="auto" mr="auto">
-    <Box ml={-25} mr={-25}>
-      <Flex flexDirection="row" justifyContent="flex-start">
-        {reviews.slice(0, 2).map(review => (
-          <Box px={25} flex="0 0 50%">
-            <ReviewCard
-              key={review.id}
-              reviewedBy={review.by}
-              reviewText={review.reviewText}
-            />
-          </Box>
-        ))}
-      </Flex>
-      {/* <Flex flexDirection="row" justifyContent="flex-start">
-        {reviews.slice(2, 4).map(review => (
-          <Box px={25} flex="0 0 50%">
-            <ReviewCard
-              key={review.id}
-              reviewedBy={review.by}
-              reviewText={review.reviewText}
-            />
-          </Box>
-        ))}
-      </Flex> */}
+  <Box bg="#fbfbfb" py={50}>
+    <Heading textAlign="center">What people say about us !</Heading>
+    <Box width={4 / 5} ml="auto" mr="auto">
+      <Box ml={-15} mr={-15}>
+        <Flex
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="stretch"
+        >
+          {reviews.slice(0, 2).map(review => (
+            <Box px={15} flex="0 0 50%" mb={30}>
+              <ReviewCard
+                key={review.id}
+                reviewedBy={review.reviewedBy}
+                reviewText={review.reviewText}
+              />
+            </Box>
+          ))}
+        </Flex>
+        <Flex
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="stretch"
+        >
+          {reviews.slice(2, 4).map(review => (
+            <Box px={15} flex="0 0 50%">
+              <ReviewCard
+                key={review.id}
+                reviewedBy={review.reviewedBy}
+                reviewText={review.reviewText}
+              />
+            </Box>
+          ))}
+        </Flex>
+      </Box>
     </Box>
   </Box>
 )
