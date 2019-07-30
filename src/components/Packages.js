@@ -1,7 +1,8 @@
 import React from "react"
-import { Box, Heading, Flex } from "rebass"
+import { Box, Flex, Heading } from "rebass"
 import { packageFeatures } from "../constants"
 import PackageCard from "./PackageCard"
+import SectionHeader from "./SectionHeader"
 
 const packages = [
   {
@@ -28,7 +29,7 @@ const packages = [
 
 const Packages = () => (
   <Box py={50}>
-    <Heading textAlign="center">Our Packages</Heading>
+    <SectionHeader title="Our Packages" />
     <Box width={4 / 5} ml="auto" mr="auto">
       <Box ml={-15} mr={-15}>
         <Flex

@@ -1,10 +1,11 @@
 import React from "react"
+import { Box } from "rebass"
 import GoogleMap from "./GoogleMap"
-import { Box, Heading } from "rebass"
+import SectionHeader from "./SectionHeader"
 
 const SayHi = () => (
-  <Box py={50}>
-    <Heading textAlign="center">Come Say Hi !</Heading>
+  <Box py={70}>
+    <SectionHeader title="Come Say Hi !" />
     <Box
       width={4 / 5}
       ml="auto"

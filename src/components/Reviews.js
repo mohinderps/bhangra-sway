@@ -1,6 +1,7 @@
 import React from "react"
-import { Flex, Box, Heading } from "rebass"
+import { Flex, Box } from "rebass"
 import ReviewCard from "./ReviewCard"
+import SectionHeader from "./SectionHeader"
 
 const reviews = [
   {
@@ -31,7 +32,7 @@ const reviews = [
 
 const Reviews = () => (
   <Box bg="#fbfbfb" py={50}>
-    <Heading textAlign="center">What people say about us !</Heading>
+    <SectionHeader title="What people say about us !" />
     <Box width={4 / 5} ml="auto" mr="auto">
       <Box ml={-15} mr={-15}>
         <Flex
