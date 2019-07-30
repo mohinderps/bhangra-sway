@@ -1,20 +1,19 @@
 import React from "react"
+// import Header from "../components/Header"
+import Hero from "../components/Hero"
 import Showcase from "../components/Showcase"
 import Reviews from "../components/Reviews"
-import Packages from "../components/Packages"
-import Hero from "../components/Hero"
-import Header from "../components/Header"
-// import Footer from "../components/Footer"
 import SayHi from "../components/SayHi"
-// import GoogleMap from "../components/GoogleMap"
+import Packages from "../components/Packages"
+// import Footer from "../components/Footer"
 
 export default () => (
-  <div>
+  <React.Fragment>
     <Hero />
     <Showcase />
     <Reviews />
     <SayHi />
-    {/* <Packages /> */}
+    <Packages />
     {/* <Footer /> */}
-  </div>
+  </React.Fragment>
 )

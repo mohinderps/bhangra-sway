@@ -1,165 +1,50 @@
 import React from "react"
+import { Box, Heading, Flex } from "rebass"
 import { packageFeatures } from "../constants"
-import styled from "styled-components"
-
-const Wrapper = styled.div`
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-`
-
-const StyledPackage = styled.div`
-  padding: 20px;
-  border: 1px solid black;
-`
+import PackageCard from "./PackageCard"
 
 const packages = [
   {
     id: 1,
-    name: "monthly",
+    name: "Monthly",
     price: 2500,
-    features: [
-      {
-        id: 1,
-        name: packageFeatures.CORE_BHANGRA_MODULE,
-        active: 1,
-      },
-      {
-        id: 2,
-        name: packageFeatures.SPECIAL_FITNESS_CLASSES,
-        active: 1,
-      },
-      {
-        id: 3,
-        name: packageFeatures.INSTRUMENTAL_PRACTICE,
-        active: 0,
-      },
-      {
-        id: 4,
-        name: packageFeatures.VIDEOGRAPHY_CHOREOGRAPHY,
-        active: 1,
-      },
-      {
-        id: 5,
-        name: packageFeatures.PARTICIPATION_IN_COMPETITIONS,
-        active: 0,
-      },
-    ],
   },
   {
     id: 2,
-    name: "quarterly",
+    name: "Quarterly",
     price: 6000,
-    features: [
-      {
-        id: 1,
-        name: packageFeatures.CORE_BHANGRA_MODULE,
-        active: 1,
-      },
-      {
-        id: 2,
-        name: packageFeatures.SPECIAL_FITNESS_CLASSES,
-        active: 1,
-      },
-      {
-        id: 3,
-        name: packageFeatures.INSTRUMENTAL_PRACTICE,
-        active: 1,
-      },
-      {
-        id: 4,
-        name: packageFeatures.VIDEOGRAPHY_CHOREOGRAPHY,
-        active: 1,
-      },
-      {
-        id: 5,
-        name: packageFeatures.PARTICIPATION_IN_COMPETITIONS,
-        active: 0,
-      },
-    ],
   },
   {
     id: 3,
-    name: "half yearly",
+    name: "Half Yearly",
     price: 10000,
-    features: [
-      {
-        id: 1,
-        name: packageFeatures.CORE_BHANGRA_MODULE,
-        active: 1,
-      },
-      {
-        id: 2,
-        name: packageFeatures.SPECIAL_FITNESS_CLASSES,
-        active: 1,
-      },
-      {
-        id: 3,
-        name: packageFeatures.INSTRUMENTAL_PRACTICE,
-        active: 1,
-      },
-      {
-        id: 4,
-        name: packageFeatures.VIDEOGRAPHY_CHOREOGRAPHY,
-        active: 1,
-      },
-      {
-        id: 5,
-        name: packageFeatures.PARTICIPATION_IN_COMPETITIONS,
-        active: 1,
-      },
-    ],
   },
   {
     id: 4,
-    name: "annually",
+    name: "Annually",
     price: 19000,
-    features: [
-      {
-        id: 1,
-        name: packageFeatures.CORE_BHANGRA_MODULE,
-        active: 1,
-      },
-      {
-        id: 2,
-        name: packageFeatures.SPECIAL_FITNESS_CLASSES,
-        active: 1,
-      },
-      {
-        id: 3,
-        name: packageFeatures.INSTRUMENTAL_PRACTICE,
-        active: 1,
-      },
-      {
-        id: 4,
-        name: packageFeatures.VIDEOGRAPHY_CHOREOGRAPHY,
-        active: 1,
-      },
-      {
-        id: 5,
-        name: packageFeatures.PARTICIPATION_IN_COMPETITIONS,
-        active: 1,
-      },
-    ],
   },
 ]
 
 const Packages = () => (
-  <Wrapper>
-    {packages.map(p => (
-      <StyledPackage key={p.id}>
-        <div>{p.name}</div>
-        <div>{p.price}</div>
-        <ul>
-          {p.features.map(pf => (
-            <li key={pf.id}>{pf.name}</li>
+  <Box py={50}>
+    <Heading textAlign="center">Our Packages</Heading>
+    <Box width={4 / 5} ml="auto" mr="auto">
+      <Box ml={-15} mr={-15}>
+        <Flex
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItem="stretch"
+        >
+          {packages.map(p => (
+            <Box key={p.id} px={15} flex="0 0 25%">
+              <PackageCard name={p.name} price={p.price} />
+            </Box>
           ))}
-        </ul>
-      </StyledPackage>
-    ))}
-  </Wrapper>
+        </Flex>
+      </Box>
+    </Box>
+  </Box>
 )
 
 export default Packages
