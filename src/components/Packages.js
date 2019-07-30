@@ -28,7 +28,7 @@ const packages = [
 ]
 
 const Packages = () => (
-  <Box py={50}>
+  <Box bg="#fbfbfb" py={50}>
     <SectionHeader title="Packages to suit your needs !" />
     <Box width={4 / 5} ml="auto" mr="auto">
       <Box ml={-15} mr={-15}>
