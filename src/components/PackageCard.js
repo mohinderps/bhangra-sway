@@ -11,10 +11,14 @@ const StyledCard = styled(Card)`
   }
 `
 
+const PriceINR = ({ price }) => <div>&#x20b9; {price}</div>
+
 const PackageCard = ({ name, price }) => (
   <StyledCard css={{ height: "100%" }} p={40}>
     <Heading textAlign="center">{name}</Heading>
-    <Heading textAlign="center">{price}</Heading>
+    <Heading textAlign="center">
+      <PriceINR price={price} />
+    </Heading>
   </StyledCard>
 )
 

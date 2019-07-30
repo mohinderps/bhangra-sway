@@ -40,9 +40,8 @@ const Reviews = () => (
           alignItems="stretch"
         >
           {reviews.slice(0, 2).map(review => (
-            <Box px={15} flex="0 0 50%" mb={30}>
+            <Box px={15} flex="0 0 50%" mb={30} key={review.id}>
               <ReviewCard
-                key={review.id}
                 reviewedBy={review.reviewedBy}
                 reviewText={review.reviewText}
               />
@@ -55,9 +54,8 @@ const Reviews = () => (
           alignItems="stretch"
         >
           {reviews.slice(2, 4).map(review => (
-            <Box px={15} flex="0 0 50%">
+            <Box px={15} flex="0 0 50%" key={review.id}>
               <ReviewCard
-                key={review.id}
                 reviewedBy={review.reviewedBy}
                 reviewText={review.reviewText}
               />
