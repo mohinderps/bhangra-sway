@@ -8,7 +8,7 @@ const ReviewCard = ({ reviewedBy, reviewText }) => (
       <Box css={{ position: "absolute", top: "0", left: "0" }}>
         <QuoteAltLeft width={32} height={32} />
       </Box>
-      {reviewText}
+      <Box css={{ "font-style": "italic" }}>{reviewText}</Box>
     </Box>
     <Box css={{ position: "absolute", right: "25px", bottom: "25px" }}>
       {reviewedBy}

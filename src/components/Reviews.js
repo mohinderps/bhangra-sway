@@ -6,27 +6,27 @@ import SectionHeader from "./SectionHeader"
 const reviews = [
   {
     id: 1,
-    reviewedBy: "Joban Goraya",
+    reviewedBy: "Jaskaran Rai",
     reviewText:
-      "Best place to learn real folk bhangra.....best and experienced caoches",
+      "Amazing dance academy. Instructors are very friendly and the environment is very inspiring with everyone teaching each other. They also helped me prepare a dance for my engagement and it garnered huge appreciation from everyone. All thanks to the Bhangra Sway team. Keep up the hard work guys !!",
   },
   {
     id: 2,
-    reviewedBy: "Himanshu Goyal",
+    reviewedBy: "Neha Bhardwaj",
     reviewText:
-      "One of the best academy I have ever been to with a beautiful and good location, where one can release his/her stress, recommended for Bhangra lovers and the corporate guys!! Must visit place! Keep it up guys, nice start!",
+      "One of the Best Bhangra classes. Trainers are so talented and dedicated. People those are searching for fitness with positive energy and enjoyable environment - Bhangra Sway is the best option for them. Special thanks and credits to dedicated Trainers - Amit and Jaskaran.",
   },
   {
     id: 3,
-    reviewedBy: "Bhavana Ahluwalia",
+    reviewedBy: "Ankita Jhingon",
     reviewText:
-      "Bhangra sway is one of the best place where Amit and jaskaran are trying their best to make Bhangra popular among young generations with undaunted spirits and commitment . Most happening place in town . Must join",
+      "Coaches (Jaskaran & Amit ) are fun, energetic and very skilled at what they do & Brings the perfect amount of energy to motivate members to become better dancers &  develop a passion for Bhangra . As an incredibly talented Coaches , creates a welcoming and enriching environment for dancers of all levels . I highly recommend this Academy whether you are a beginner or more advanced .",
   },
   {
     id: 4,
-    reviewedBy: "Yash Deep",
+    reviewedBy: "Maninder Singh",
     reviewText:
-      "Best place! you feel welcomed when you first walk in.. genuine and highly skilled teachers.. I have learnt so much about Bhangra and Punjabi culture.. in a short period of time.. I definitely recommend this place to anyone who is looking to learn bhangra!",
+      "One of best environment I have ever found in any classes. Everyone is getting special attention time to time when ever required. Trainers are so helpful to groom you up. No doubt they will grow soon and trainers are very much dedicated for their work. Jaskaran and Amit congrats for your achievements in Bhangra in such a small age.",
   },
 ]
 

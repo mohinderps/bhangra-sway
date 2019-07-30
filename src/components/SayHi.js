@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader"
 
 const SayHi = () => (
   <Box py={70}>
-    <SectionHeader title="Come Say Hi !" />
+    <SectionHeader title="Come say hi !" />
     <Box
       width={4 / 5}
       ml="auto"
