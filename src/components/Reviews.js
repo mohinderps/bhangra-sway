@@ -32,7 +32,7 @@ const reviews = [
 
 const Reviews = () => (
   <Box bg="#fbfbfb" py={70}>
-    <SectionHeader title="What people say about us !" />
+    <SectionHeader title="What people say about us" />
     <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto">
       <Box ml={-15} mr={-15}>
         <Flex

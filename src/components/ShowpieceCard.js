@@ -9,7 +9,7 @@ const ShowpieceCard = ({ title }) => (
           <Text
             key={index}
             color="#000"
-            fontSize={45}
+            fontSize={42}
             fontWeight={600}
             lineHeight="1.2em"
             css={{ "text-transform": "uppercase" }}

@@ -29,7 +29,7 @@ const packages = [
 
 const Packages = () => (
   <Box bg="#fbfbfb" py={70}>
-    <SectionHeader title="Packages to suit your needs !" />
+    <SectionHeader title="Packages to suit your needs" />
     <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto">
       <Box ml={-15} mr={-15}>
         <Flex
