@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Box, Flex } from "rebass"
 import ShowpieceCard from "./ShowpieceCard"
+import SectionHeader from "./SectionHeader"
 
 const Showcase = () => {
   const data = useStaticQuery(graphql`
@@ -63,7 +64,7 @@ const Showcase = () => {
                 />
               </Box>
             </Box>
-            <Box px={15} flex="0 0 45%">
+            <Box px={15} flex="0 0 40%" ml="5%">
               <ShowpieceCard title="We Participate In Competitions" />
             </Box>
           </Flex>
@@ -82,7 +83,7 @@ const Showcase = () => {
                 />
               </Box>
             </Box>
-            <Box px={15} flex="0 0 45%" order={1}>
+            <Box px={15} flex="0 0 40%" ml="5%" order={1}>
               <ShowpieceCard title="We Celebrate Festivals" />
             </Box>
           </Flex>
@@ -101,7 +102,7 @@ const Showcase = () => {
                 />
               </Box>
             </Box>
-            <Box px={15} flex="0 0 45%">
+            <Box px={15} flex="0 0 40%" ml="5%">
               <ShowpieceCard title="We Perform In Events" />
             </Box>
           </Flex>
@@ -120,7 +121,7 @@ const Showcase = () => {
                 />
               </Box>
             </Box>
-            <Box px={15} flex="0 0 45%" order={1}>
+            <Box px={15} flex="0 0 40%" ml="5%" order={1}>
               <ShowpieceCard title="We Give Workshops" />
             </Box>
           </Flex>
@@ -132,6 +133,7 @@ const Showcase = () => {
             alignItems="flex-start"
           >
             <Box px={15} flex="0 0 100%">
+              <SectionHeader title="We are Bhangra Sway Family" />
               <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
                 <Img
                   fluid={data.family.childImageSharp.fluid}
