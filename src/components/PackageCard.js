@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Heading, Text } from "rebass"
+import { Card, Text } from "rebass"
 import styled from "styled-components"
 import PriceINR from "../system/PriceINR"
 
@@ -14,10 +14,12 @@ const StyledCard = styled(Card)`
 
 const PackageCard = ({ name, price }) => (
   <StyledCard bg="#fff" css={{ height: "100%" }} p={40}>
-    <Heading textAlign="center">{name}</Heading>
-    <Heading textAlign="center">
+    <Text textAlign="center" fontSize="1.5em">
+      {name}
+    </Text>
+    <Text textAlign="center" fontSize="1.23em" color="#999">
       <PriceINR price={price} />
-    </Heading>
+    </Text>
   </StyledCard>
 )
 
