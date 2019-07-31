@@ -5,6 +5,7 @@ import Showcase from "../components/Showcase"
 import Reviews from "../components/Reviews"
 import SayHi from "../components/SayHi"
 import Packages from "../components/Packages"
+import Credits from "../components/Credits"
 // import Footer from "../components/Footer"
 
 export default () => (
@@ -14,6 +15,7 @@ export default () => (
     <Reviews />
     <SayHi />
     <Packages />
+    <Credits />
     {/* <Footer /> */}
   </React.Fragment>
 )
