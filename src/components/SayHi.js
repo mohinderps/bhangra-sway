@@ -7,10 +7,10 @@ const SayHi = () => (
   <Box py={70}>
     <SectionHeader title="Come say hi !" />
     <Box
-      width={4 / 5}
+      css={{ "max-width": "1140px", position: "relative", height: "500px" }}
+      px={15}
       ml="auto"
       mr="auto"
-      css={{ position: "relative", height: "500px" }}
     >
       <GoogleMap />
     </Box>

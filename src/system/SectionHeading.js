@@ -9,7 +9,6 @@ const SectionHeading = styled.h2`
   font-weight: 600;
   margin-top: 0;
   color: #000;
-  letter-spacing: -0.025em;
 `
 
 export default SectionHeading

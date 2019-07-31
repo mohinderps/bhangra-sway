@@ -33,7 +33,7 @@ const reviews = [
 const Reviews = () => (
   <Box bg="#fbfbfb" py={50}>
     <SectionHeader title="What people say about us !" />
-    <Box width={4 / 5} ml="auto" mr="auto">
+    <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto">
       <Box ml={-15} mr={-15}>
         <Flex
           flexDirection="row"
