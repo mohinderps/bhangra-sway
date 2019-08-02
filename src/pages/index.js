@@ -10,12 +10,12 @@ import Credits from "../components/Credits"
 
 export default () => (
   <React.Fragment>
-    <Hero />
+    {/* <Hero /> */}
     <Showcase />
-    <Reviews />
-    <SayHi />
-    <Packages />
-    <Credits />
+    {/* <Reviews /> */}
+    {/* <SayHi /> */}
+    {/* <Packages /> */}
+    {/* <Credits /> */}
     {/* <Footer /> */}
   </React.Fragment>
 )
