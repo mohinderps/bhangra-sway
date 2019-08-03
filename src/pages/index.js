@@ -12,10 +12,10 @@ export default () => (
   <React.Fragment>
     {/* <Hero /> */}
     <Showcase />
-    {/* <Reviews /> */}
-    {/* <SayHi /> */}
-    {/* <Packages /> */}
-    {/* <Credits /> */}
+    <Reviews />
+    <SayHi />
+    <Packages />
+    <Credits />
     {/* <Footer /> */}
   </React.Fragment>
 )

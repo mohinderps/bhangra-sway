@@ -1,8 +1,17 @@
 import React from "react"
 import { Box, Flex, Heading } from "rebass"
+import styled from "styled-components"
 import { packageFeatures } from "../constants"
 import PackageCard from "./PackageCard"
 import SectionHeader from "./SectionHeader"
+
+const PackageBox = styled(Box)`
+  flex: 0 0 100%;
+
+  @media (min-width: 800px) {
+    flex: 0 0 50%;
+  }
+`
 
 const packages = [
   {
@@ -29,18 +38,20 @@ const packages = [
 
 const Packages = () => (
   <Box bg="#fbfbfb" py={70}>
-    <SectionHeader title="Packages to suit your needs" />
-    <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto">
+    {/* <SectionHeader title="Packages to suit your needs" /> */}
+    <Box px={15} ml="auto" mr="auto">
+      {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
       <Box ml={-15} mr={-15}>
         <Flex
           flexDirection="row"
           justifyContent="flex-start"
           alignItem="stretch"
+          flexWrap="wrap"
         >
           {packages.map(p => (
-            <Box key={p.id} px={15} flex="0 0 25%">
+            <PackageBox key={p.id} p={15}>
               <PackageCard name={p.name} price={p.price} />
-            </Box>
+            </PackageBox>
           ))}
         </Flex>
       </Box>

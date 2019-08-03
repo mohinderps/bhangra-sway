@@ -5,14 +5,11 @@ import SectionHeader from "./SectionHeader"
 
 const SayHi = () => (
   <Box py={70}>
-    <SectionHeader title="Come say hi" />
-    <Box
-      css={{ "max-width": "1140px", position: "relative", height: "500px" }}
-      px={15}
-      ml="auto"
-      mr="auto"
-    >
-      <GoogleMap />
+    {/* <SectionHeader title="Come say hi" /> */}
+    <Box px={15} ml="auto" mr="auto">
+      <Box css={{ position: "relative", height: "500px" }}>
+        <GoogleMap />
+      </Box>
     </Box>
   </Box>
 )
