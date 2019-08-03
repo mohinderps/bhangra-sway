@@ -10,7 +10,7 @@ const ImageBox = styled(Box)`
   flex: 0 0 100%;
   order: 2;
 
-  @media (min-width: 750px) {
+  @media (min-width: 800px) {
     flex: 0 0 55%;
     order: ${props => (props.place % 2 === 0 ? 2 : 1)};
   }
@@ -20,7 +20,7 @@ const TextBox = styled(Box)`
   flex: 0 0 100%;
   order: 1;
 
-  @media (min-width: 750px) {
+  @media (min-width: 800px) {
     flex: 0 0 45%;
     order: ${props => (props.place % 2 === 0 ? 1 : 2)};
   }
