@@ -10,7 +10,7 @@ import Credits from "../components/Credits"
 
 export default () => (
   <React.Fragment>
-    {/* <Hero /> */}
+    <Hero />
     <Showcase />
     <Reviews />
     <SayHi />

@@ -68,7 +68,7 @@ const Showcase = () => {
   `)
 
   return (
-    <Box py="3em">
+    <Box py={70}>
       <Box px={15} ml="auto" mr="auto">
         {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
         <Box ml={-15} mr={-15}>
@@ -91,19 +91,17 @@ const Showcase = () => {
             </Box>
           </Flex> */}
           <Flex
-            py="2em"
+            pb="2em"
             flexDirection="row"
             justifyContent="flex-start"
             alignItems="flex-start"
             flexWrap="wrap"
           >
             <ImageBox px={15} place={1}>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.competition.childImageSharp.fluid}
-                  alt="Bhangra Sway team in competitions"
-                />
-              </Box>
+              <Img
+                fluid={data.competition.childImageSharp.fluid}
+                alt="Bhangra Sway team in competitions"
+              />
             </ImageBox>
             <TextBox px={15} mb="1em" place={1}>
               <Text
@@ -145,12 +143,10 @@ const Showcase = () => {
             flexWrap="wrap"
           >
             <ImageBox px={15} place={2}>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.festival.childImageSharp.fluid}
-                  alt="Bhangra Sway team celebrating festivals"
-                />
-              </Box>
+              <Img
+                fluid={data.festival.childImageSharp.fluid}
+                alt="Bhangra Sway team celebrating festivals"
+              />
             </ImageBox>
             <TextBox px={15} mb="1em" place={2}>
               <Text
@@ -191,12 +187,10 @@ const Showcase = () => {
             flexWrap="wrap"
           >
             <ImageBox px={15} place={3}>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.performance.childImageSharp.fluid}
-                  alt="Bhangra Sway performance in events"
-                />
-              </Box>
+              <Img
+                fluid={data.performance.childImageSharp.fluid}
+                alt="Bhangra Sway performance in events"
+              />
             </ImageBox>
             <TextBox px={15} mb="1em" place={3}>
               <Text
@@ -238,12 +232,10 @@ const Showcase = () => {
             flexWrap="wrap"
           >
             <ImageBox px={15} place={4}>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.workshop.childImageSharp.fluid}
-                  alt="Bhangra sway workshops"
-                />
-              </Box>
+              <Img
+                fluid={data.workshop.childImageSharp.fluid}
+                alt="Bhangra sway workshops"
+              />
             </ImageBox>
             <TextBox px={15} mb="1em" place={4}>
               <Text
@@ -259,7 +251,7 @@ const Showcase = () => {
           </Flex>
 
           <Flex
-            py="2em"
+            pt="2em"
             flexDirection="row"
             justifyContent="flex-start"
             alignItems="flex-start"
@@ -275,12 +267,11 @@ const Showcase = () => {
               >
                 We are Bhangra Sway Family
               </Text>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.family.childImageSharp.fluid}
-                  alt="Bhangra Sway Family"
-                />
-              </Box>
+
+              <Img
+                fluid={data.family.childImageSharp.fluid}
+                alt="Bhangra Sway Family"
+              />
             </Box>
           </Flex>
         </Box>
