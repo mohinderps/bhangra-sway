@@ -1,13 +1,13 @@
 import React from "react"
 import { Box } from "rebass"
 import GoogleMap from "./GoogleMap"
-import SectionHeader from "./SectionHeader"
+import SectionHeading from "../system/SectionHeading"
 
 const SayHi = () => (
   <Box py={70}>
-    {/* <SectionHeader title="Come say hi" /> */}
+    <SectionHeading>Come say hi</SectionHeading>
     <Box px={15} ml="auto" mr="auto">
-      <Box css={{ position: "relative", height: "500px" }}>
+      <Box py={15} css={{ position: "relative", height: "500px" }}>
         <GoogleMap />
       </Box>
     </Box>

@@ -2,7 +2,7 @@ import React from "react"
 import { Flex, Box } from "rebass"
 import styled from "styled-components"
 import ReviewCard from "./ReviewCard"
-import SectionHeader from "./SectionHeader"
+import SectionHeading from "../system/SectionHeading"
 
 const ReviewBox = styled(Box)`
   flex: 0 0 100%;
@@ -41,7 +41,7 @@ const reviews = [
 
 const Reviews = () => (
   <Box bg="#fbfbfb" py={70}>
-    {/* <SectionHeader title="What people say about us" /> */}
+    <SectionHeading>What people say about us</SectionHeading>
     <Box px={15} ml="auto" mr="auto">
       {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
       <Box ml={-15} mr={-15}>

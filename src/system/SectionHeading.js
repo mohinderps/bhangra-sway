@@ -1,14 +1,16 @@
 import React from "react"
-import styled from "styled-components"
+import { Text, Box } from "rebass"
 
-const SectionHeading = styled.h2`
-  text-align: center;
-  font-size: 40px;
-  line-height: 1.5em;
-  margin-bottom: 0.3em;
-  font-weight: 600;
-  margin-top: 0;
-  color: #000;
-`
-
-export default SectionHeading
+export default ({ children }) => (
+  <Box px={15} ml="auto" mr="auto" mb="2em">
+    <Text
+      textAlign="center"
+      fontSize={32}
+      fontWeight={600}
+      lineHeight="1.5em"
+      color="#000"
+    >
+      {children}
+    </Text>
+  </Box>
+)

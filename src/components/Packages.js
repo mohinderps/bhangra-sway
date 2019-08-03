@@ -3,13 +3,13 @@ import { Box, Flex, Heading } from "rebass"
 import styled from "styled-components"
 import { packageFeatures } from "../constants"
 import PackageCard from "./PackageCard"
-import SectionHeader from "./SectionHeader"
+import SectionHeading from "../system/SectionHeading"
 
 const PackageBox = styled(Box)`
   flex: 0 0 100%;
 
   @media (min-width: 800px) {
-    flex: 0 0 50%;
+    flex: 0 0 25%;
   }
 `
 
@@ -38,7 +38,7 @@ const packages = [
 
 const Packages = () => (
   <Box bg="#fbfbfb" py={70}>
-    {/* <SectionHeader title="Packages to suit your needs" /> */}
+    <SectionHeading>Packages to suit your needs</SectionHeading>
     <Box px={15} ml="auto" mr="auto">
       {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
       <Box ml={-15} mr={-15}>
