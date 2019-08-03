@@ -30,6 +30,20 @@ const VideoForegroundStyleDiv = styled.div`
   height: 100%;
   pointer-events: none;
 
+  @media (min-aspect-ratio: 16/9) {
+     {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+     {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
   iframe {
     position: absolute;
     top: 0;
