@@ -5,9 +5,10 @@ import styled from "styled-components"
 const VideoBackgroundStyledDiv = styled.div`
   background: #000;
   position: relative;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
   z-index: -99;
+  overflow: hidden;
 
   &:after {
     display: block;
@@ -39,8 +40,8 @@ const VideoForegroundStyleDiv = styled.div`
 
   @media (max-aspect-ratio: 16/9) {
      {
-      width: 300%;
-      left: -100%;
+      width: 450%;
+      left: -150%;
     }
   }
 
@@ -53,6 +54,7 @@ const VideoForegroundStyleDiv = styled.div`
     pointer-events: none;
   }
 `
+
 class Hero extends React.Component {
   videoOptions = {
     playerVars: {
