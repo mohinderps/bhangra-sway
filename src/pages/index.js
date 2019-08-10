@@ -13,11 +13,11 @@ export default () => (
   <React.Fragment>
     {/* <Hero /> */}
     <Hero2 />
-    {/* <Showcase />
+    <Showcase />
     <Reviews />
     <SayHi />
     <Packages />
-    <Credits /> */}
+    <Credits />
     {/* <Footer /> */}
   </React.Fragment>
 )
