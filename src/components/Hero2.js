@@ -44,7 +44,7 @@ class Hero2 extends React.Component {
   render() {
     return (
       <Box css={{ height: "100vh", position: "relative" }}>
-        <Header>
+        {/* <Header>
           <Text
             textAlign="center"
             fontSize={20}
@@ -53,7 +53,7 @@ class Hero2 extends React.Component {
           >
             Bhangra Sway
           </Text>
-        </Header>
+        </Header> */}
         <StyledVideo className="video-bg" muted loop ref={this.videoElement}>
           <source src={HeroVideo} type="video/mp4"></source>
         </StyledVideo>
