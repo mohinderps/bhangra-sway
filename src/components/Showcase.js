@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Box, Flex, Text } from "rebass"
 import styled from "styled-components"
-// import ShowpieceCard from "./ShowpieceCard"
 import SectionHeader from "./SectionHeader"
 
 const ImageBox = styled(Box)`

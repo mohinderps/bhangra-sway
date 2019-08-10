@@ -57,7 +57,7 @@ class Hero2 extends React.Component {
         <StyledVideo className="video-bg" muted loop ref={this.videoElement}>
           <source src={HeroVideo} type="video/mp4"></source>
         </StyledVideo>
-        <HeroContent>
+        {/* <HeroContent>
           <Flex
             css={{ height: "100%" }}
             justifyContent="center"
@@ -84,7 +84,7 @@ class Hero2 extends React.Component {
               </Text>
             </Box>
           </Flex>
-        </HeroContent>
+        </HeroContent> */}
       </Box>
     )
   }
