@@ -70,6 +70,7 @@ class Hero2 extends React.Component {
                 color="#fff"
                 lineHeight="1.5em"
                 mb={30}
+                px={25}
               >
                 Bhangra Sway
               </Text>
