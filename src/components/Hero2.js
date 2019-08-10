@@ -71,7 +71,7 @@ class Hero2 extends React.Component {
                 lineHeight="1.5em"
                 mb={30}
               >
-                Immortal Dance of Punjab
+                Bhangra Sway
               </Text>
               <Text
                 textAlign="center"
