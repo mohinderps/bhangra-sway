@@ -6,6 +6,12 @@ export const packageFeatures = {
   PARTICIPATION_IN_COMPETITIONS: "Participation In Competitions",
 }
 
+export const FacebookUrl = "https://www.facebook.com/bhangrasway/"
+
+export const YoutubeUrl = "https://www.youtube.com/bhangra-sway"
+
+export const InstagramUrl = "https://www.instagram.com/bhangrasway/"
+
 export const mapStyles = [
   {
     elementType: "geometry",
