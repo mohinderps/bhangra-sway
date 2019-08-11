@@ -50,7 +50,7 @@ const Hero = () => {
             lineHeight="2em"
             fontWeight={300}
             color="#1e1231"
-            mb={80}
+            mb={100}
           >
             Welcome to the Gurgaon's best Bhangra Academy!
           </Text>

@@ -32,7 +32,7 @@ const packages = [
   {
     id: 4,
     name: "Annually",
-    price: 19000,
+    price: 18000,
   },
 ]
 
