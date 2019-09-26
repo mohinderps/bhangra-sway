@@ -8,7 +8,7 @@ const RedHeart = styled(Heart)`
 `
 
 const Credits = () => (
-  <Card bg="#32323c" color="#f7f7f7">
+  <Card bg="black" color="white">
     <Text textAlign="center" letterSpacing=".05em">
       Made with <RedHeart size="18" /> and a bhangra smile.
     </Text>

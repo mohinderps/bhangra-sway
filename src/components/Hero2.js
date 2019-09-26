@@ -138,6 +138,7 @@ class Hero2 extends React.Component {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundColor: "black",
           }}
         >
           {/* <StyledVideo className="video-bg" muted loop ref={this.videoElement}>
