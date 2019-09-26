@@ -1,6 +1,5 @@
 import React from "react"
 // import Header from "../components/Header"
-import Hero from "../components/Hero"
 import Hero2 from "../components/Hero2"
 import Showcase from "../components/Showcase"
 import Reviews from "../components/Reviews"
@@ -11,8 +10,7 @@ import Credits from "../components/Credits"
 
 export default () => (
   <React.Fragment>
-    <Hero />
-    {/* <Hero2 /> */}
+    <Hero2 />
     <Showcase />
     <Reviews />
     <SayHi />
