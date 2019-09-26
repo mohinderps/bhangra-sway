@@ -5,6 +5,7 @@ import styled from "styled-components"
 import cover from "../data/gallery/cover-resized.jpg"
 import { Facebook, Instagram, Youtube } from "styled-icons/feather"
 import { FacebookUrl, InstagramUrl, YoutubeUrl } from "../constants"
+import { Whatsapp } from "styled-icons/boxicons-logos"
 
 // const StyledVideo = styled.video`
 //   position: absolute;
@@ -15,6 +16,21 @@ import { FacebookUrl, InstagramUrl, YoutubeUrl } from "../constants"
 //   overflow: hidden;
 //   object-fit: cover;
 // `
+
+const BookButton = styled.button`
+  background-color: #1fa178 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 10px;
+  padding: 0 4px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+`
 
 class Hero2 extends React.Component {
   constructor(props) {
@@ -72,11 +88,11 @@ class Hero2 extends React.Component {
               fontSize={20}
               lineHeight="2em"
               fontWeight={300}
-              mb={150}
+              mb={50}
             >
               Welcome to the Gurgaon's best Bhangra Academy!
             </Text>
-            <Flex justifyContent="center" alignItems="center">
+            <Flex justifyContent="center" alignItems="center" mb={75}>
               <Box mx={20}>
                 <a target="_blank" href={InstagramUrl}>
                   <Instagram size={48} style={{ stroke: "white" }} />
@@ -93,6 +109,12 @@ class Hero2 extends React.Component {
                 </a>
               </Box>
             </Flex>
+            <a href="https://wa.me/919971676322" target="_blank">
+              <BookButton>
+                <Whatsapp size={24} color="white" />
+                &nbsp;Book Your Slot
+              </BookButton>
+            </a>
           </Box>
         </Box>
         <Box
