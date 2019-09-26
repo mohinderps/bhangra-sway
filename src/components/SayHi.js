@@ -29,7 +29,11 @@ const SayHi = () => (
         Drop us a message
       </Text>
       <Box>
-        <a href="https://wa.me/919971676322" target="_blank">
+        <a
+          href="https://wa.me/919971676322"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Flex
             bg="#01e675"
             width={36}

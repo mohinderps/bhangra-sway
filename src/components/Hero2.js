@@ -34,10 +34,10 @@ const BookButton = styled.button`
 `
 
 class Hero2 extends React.Component {
-  constructor(props) {
-    super(props)
-    // this.videoElement = React.createRef()
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.videoElement = React.createRef()
+  // }
 
   render() {
     return (
@@ -95,22 +95,30 @@ class Hero2 extends React.Component {
             </Text>
             <Flex justifyContent="center" alignItems="center" mb={75}>
               <Box mx={20}>
-                <a target="_blank" href={InstagramUrl}>
+                <a
+                  target="_blank"
+                  href={InstagramUrl}
+                  rel="noopener noreferrer"
+                >
                   <Instagram size={48} style={{ stroke: "white" }} />
                 </a>
               </Box>
               <Box mx={20}>
-                <a target="_blank" href={YoutubeUrl}>
+                <a target="_blank" href={YoutubeUrl} rel="noopener noreferrer">
                   <Youtube size={48} style={{ stroke: "white" }} />
                 </a>
               </Box>
               <Box mr={20}>
-                <a target="_blank" href={FacebookUrl}>
+                <a target="_blank" href={FacebookUrl} rel="noopener noreferrer">
                   <Facebook size={48} style={{ stroke: "white" }} />
                 </a>
               </Box>
             </Flex>
-            <a href="https://wa.me/919971676322" target="_blank">
+            <a
+              href="https://wa.me/919971676322"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BookButton>
                 <Whatsapp size={24} color="white" />
                 &nbsp;Book Your Slot

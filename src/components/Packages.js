@@ -1,7 +1,6 @@
 import React from "react"
-import { Box, Flex, Heading } from "rebass"
+import { Box, Flex } from "rebass"
 import styled from "styled-components"
-import { packageFeatures } from "../constants"
 import PackageCard from "./PackageCard"
 import SectionHeading from "../system/SectionHeading"
 
