@@ -30,6 +30,7 @@ const BookButton = styled.button`
   line-height: 50px;
   border-radius: 50px;
   cursor: pointer;
+  outline: none;
 `
 
 class Hero2 extends React.Component {
