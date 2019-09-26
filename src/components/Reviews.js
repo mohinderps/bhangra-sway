@@ -3,11 +3,12 @@ import { Flex, Box } from "rebass"
 import styled from "styled-components"
 import ReviewCard from "./ReviewCard"
 import SectionHeading from "../system/SectionHeading"
+import Container from "../common/Container"
 
 const ReviewBox = styled(Box)`
   flex: 0 0 100%;
 
-  @media (min-width: 800px) {
+  @media (min-width: 576px) {
     flex: 0 0 50%;
   }
 `
@@ -42,41 +43,45 @@ const reviews = [
 const Reviews = () => (
   <Box bg="#fbfbfb" py={70}>
     <SectionHeading>What people say about us</SectionHeading>
-    <Box px={15} ml="auto" mr="auto">
-      {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
-      <Box ml={-15} mr={-15}>
-        <Flex
-          flexDirection="row"
-          justifyContent="flex-start"
-          alignItems="stretch"
-          flexWrap="wrap"
-        >
-          {reviews.slice(0, 2).map(review => (
-            <ReviewBox p={15} key={review.id}>
-              <ReviewCard
-                reviewedBy={review.reviewedBy}
-                reviewText={review.reviewText}
-              />
-            </ReviewBox>
-          ))}
-        </Flex>
-        <Flex
-          flexDirection="row"
-          justifyContent="flex-start"
-          alignItems="stretch"
-          flexWrap="wrap"
-        >
-          {reviews.slice(2, 4).map(review => (
-            <ReviewBox p={15} key={review.id}>
-              <ReviewCard
-                reviewedBy={review.reviewedBy}
-                reviewText={review.reviewText}
-              />
-            </ReviewBox>
-          ))}
-        </Flex>
-      </Box>
-    </Box>
+    <Container>
+      <Flex
+        ml={-15}
+        mr={-15}
+        flexDirection="row"
+        justifyContent="flex-start"
+        alignItems="stretch"
+        flexWrap="wrap"
+      >
+        {reviews.slice(0, 2).map(review => (
+          <ReviewBox p={15} key={review.id}>
+            <ReviewCard
+              reviewedBy={review.reviewedBy}
+              reviewText={review.reviewText}
+            />
+          </ReviewBox>
+        ))}
+      </Flex>
+    </Container>
+
+    <Container>
+      <Flex
+        ml={-15}
+        mr={-15}
+        flexDirection="row"
+        justifyContent="flex-start"
+        alignItems="stretch"
+        flexWrap="wrap"
+      >
+        {reviews.slice(2, 4).map(review => (
+          <ReviewBox p={15} key={review.id}>
+            <ReviewCard
+              reviewedBy={review.reviewedBy}
+              reviewText={review.reviewText}
+            />
+          </ReviewBox>
+        ))}
+      </Flex>
+    </Container>
   </Box>
 )
 

@@ -3,11 +3,12 @@ import { Box, Flex } from "rebass"
 import styled from "styled-components"
 import PackageCard from "./PackageCard"
 import SectionHeading from "../system/SectionHeading"
+import Container from "../common/Container"
 
 const PackageBox = styled(Box)`
   flex: 0 0 100%;
 
-  @media (min-width: 800px) {
+  @media (min-width: 576px) {
     flex: 0 0 25%;
   }
 `
@@ -38,23 +39,22 @@ const packages = [
 const Packages = () => (
   <Box bg="#fbfbfb" py={70}>
     <SectionHeading>Packages to suit your needs</SectionHeading>
-    <Box px={15} ml="auto" mr="auto">
-      {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
-      <Box ml={-15} mr={-15}>
-        <Flex
-          flexDirection="row"
-          justifyContent="flex-start"
-          alignItem="stretch"
-          flexWrap="wrap"
-        >
-          {packages.map(p => (
-            <PackageBox key={p.id} p={15}>
-              <PackageCard name={p.name} price={p.price} />
-            </PackageBox>
-          ))}
-        </Flex>
-      </Box>
-    </Box>
+    <Container>
+      <Flex
+        ml={-15}
+        mr={-15}
+        flexDirection="row"
+        justifyContent="flex-start"
+        alignItem="stretch"
+        flexWrap="wrap"
+      >
+        {packages.map(p => (
+          <PackageBox key={p.id} p={15}>
+            <PackageCard name={p.name} price={p.price} />
+          </PackageBox>
+        ))}
+      </Flex>
+    </Container>
   </Box>
 )
 

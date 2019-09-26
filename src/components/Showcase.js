@@ -3,12 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Box, Flex, Text } from "rebass"
 import styled from "styled-components"
+import Container from "../common/Container"
 
 const ImageBox = styled(Box)`
   flex: 0 0 100%;
   order: 2;
 
-  @media (min-width: 800px) {
+  @media (min-width: 576px) {
     flex: 0 0 55%;
     order: ${props => (props.place % 2 === 0 ? 2 : 1)};
   }
@@ -17,10 +18,12 @@ const ImageBox = styled(Box)`
 const TextBox = styled(Box)`
   flex: 0 0 100%;
   order: 1;
+  text-align: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 576px) {
     flex: 0 0 45%;
     order: ${props => (props.place % 2 === 0 ? 1 : 2)};
+    text-align: ${props => (props.place % 2 === 0 ? "right" : "left")};
   }
 `
 
@@ -67,213 +70,150 @@ const Showcase = () => {
 
   return (
     <Box py={70}>
-      <Box px={15} ml="auto" mr="auto">
-        {/* <Box css={{ "max-width": "1140px" }} px={15} ml="auto" mr="auto"> */}
-        <Box ml={-15} mr={-15}>
-          {/* <Flex
-            py={70}
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-          >
-            <Box px={15} flex="0 0 55%">
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.competition.childImageSharp.fluid}
-                  alt="Bhangra Sway team in competitions"
-                />
-              </Box>
-            </Box>
-            <Box px={15} flex="0 0 40%" ml="5%">
-              <ShowpieceCard title="We Participate In Competitions" />
-            </Box>
-          </Flex> */}
-          <Flex
-            pb="2em"
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            flexWrap="wrap"
-          >
-            <ImageBox px={15} place={1}>
-              <Img
-                fluid={data.competition.childImageSharp.fluid}
-                alt="Bhangra Sway team in competitions"
-              />
-            </ImageBox>
-            <TextBox px={15} mb="1em" place={1}>
-              <Text
-                color="#000"
-                fontSize="2em"
-                fontWeight={600}
-                lineHeight="1.5em"
-                textAlign="center"
-              >
-                We Participate in Competitions
-              </Text>
-            </TextBox>
-          </Flex>
+      <Container>
+        <Flex
+          ml={-15}
+          mr={-15}
+          pb="2em"
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          flexWrap="wrap"
+        >
+          <ImageBox px={15} place={1}>
+            <Img
+              fluid={data.competition.childImageSharp.fluid}
+              alt="Bhangra Sway team in competitions"
+            />
+          </ImageBox>
+          <TextBox px={15} mb="1em" place={1}>
+            <Text
+              color="#000"
+              fontSize="2em"
+              fontWeight={600}
+              lineHeight="1.5em"
+            >
+              We Participate in Competitions
+            </Text>
+          </TextBox>
+        </Flex>
+      </Container>
 
-          {/* <Flex
-            py={70}
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-          >
-            <Box px={15} flex="0 0 55%" order={2}>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.festival.childImageSharp.fluid}
-                  alt="Bhangra Sway team celebrating festivals"
-                />
-              </Box>
-            </Box>
-            <Box px={15} flex="0 0 40%" ml="5%" order={1}>
-              <ShowpieceCard title="We Celebrate Festivals" />
-            </Box>
-          </Flex> */}
+      <Container>
+        <Flex
+          ml={-15}
+          mr={-15}
+          py="2em"
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          flexWrap="wrap"
+        >
+          <ImageBox px={15} place={2}>
+            <Img
+              fluid={data.festival.childImageSharp.fluid}
+              alt="Bhangra Sway team celebrating festivals"
+            />
+          </ImageBox>
+          <TextBox px={15} mb="1em" place={2}>
+            <Text
+              color="#000"
+              fontSize="2em"
+              fontWeight={600}
+              lineHeight="1.5em"
+            >
+              We Celebrate Festivals
+            </Text>
+          </TextBox>
+        </Flex>
+      </Container>
 
-          <Flex
-            py="2em"
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            flexWrap="wrap"
-          >
-            <ImageBox px={15} place={2}>
-              <Img
-                fluid={data.festival.childImageSharp.fluid}
-                alt="Bhangra Sway team celebrating festivals"
-              />
-            </ImageBox>
-            <TextBox px={15} mb="1em" place={2}>
-              <Text
-                color="#000"
-                fontSize="2em"
-                fontWeight={600}
-                lineHeight="1.5em"
-                textAlign="center"
-              >
-                We Celebrate Festivals
-              </Text>
-            </TextBox>
-          </Flex>
+      <Container>
+        <Flex
+          ml={-15}
+          mr={-15}
+          py="2em"
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          flexWrap="wrap"
+        >
+          <ImageBox px={15} place={3}>
+            <Img
+              fluid={data.performance.childImageSharp.fluid}
+              alt="Bhangra Sway performance in events"
+            />
+          </ImageBox>
+          <TextBox px={15} mb="1em" place={3}>
+            <Text
+              color="#000"
+              fontSize="2em"
+              fontWeight={600}
+              lineHeight="1.5em"
+            >
+              We Perform in Events
+            </Text>
+          </TextBox>
+        </Flex>
+      </Container>
 
-          {/* <Flex
-            py={70}
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-          >
-            <Box px={15} flex="0 0 55%">
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.performance.childImageSharp.fluid}
-                  alt="Bhangra Sway performance in events"
-                />
-              </Box>
-            </Box>
-            <Box px={15} flex="0 0 40%" ml="5%">
-              <ShowpieceCard title="We Perform In Events" />
-            </Box>
-          </Flex> */}
-          <Flex
-            py="2em"
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            flexWrap="wrap"
-          >
-            <ImageBox px={15} place={3}>
-              <Img
-                fluid={data.performance.childImageSharp.fluid}
-                alt="Bhangra Sway performance in events"
-              />
-            </ImageBox>
-            <TextBox px={15} mb="1em" place={3}>
-              <Text
-                color="#000"
-                fontSize="2em"
-                fontWeight={600}
-                lineHeight="1.5em"
-                textAlign="center"
-              >
-                We Perform in Events
-              </Text>
-            </TextBox>
-          </Flex>
+      <Container>
+        <Flex
+          ml={-15}
+          mr={-15}
+          py="2em"
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          flexWrap="wrap"
+        >
+          <ImageBox px={15} place={4}>
+            <Img
+              fluid={data.workshop.childImageSharp.fluid}
+              alt="Bhangra sway workshops"
+            />
+          </ImageBox>
+          <TextBox px={15} mb="1em" place={4}>
+            <Text
+              color="#000"
+              fontSize="2em"
+              fontWeight={600}
+              lineHeight="1.5em"
+            >
+              We give Workshops
+            </Text>
+          </TextBox>
+        </Flex>
+      </Container>
 
-          {/* <Flex
-            py={70}
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-          >
-            <Box px={15} flex="0 0 55%" order={2}>
-              <Box css={{ "border-radius": "15px", overflow: "hidden" }}>
-                <Img
-                  fluid={data.workshop.childImageSharp.fluid}
-                  alt="Bhangra sway workshops"
-                />
-              </Box>
-            </Box>
-            <Box px={15} flex="0 0 40%" ml="5%" order={1}>
-              <ShowpieceCard title="We Give Workshops" />
-            </Box>
-          </Flex> */}
+      <Container>
+        <Flex
+          ml={-15}
+          mr={-15}
+          pt="2em"
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+        >
+          <Box px={15} flex="0 0 100%">
+            <Text
+              color="#000"
+              fontSize="2em"
+              fontWeight={600}
+              lineHeight="1.5em"
+              mb="1rem"
+              textAlign="center"
+            >
+              We are Bhangra Sway Family
+            </Text>
 
-          <Flex
-            py="2em"
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            flexWrap="wrap"
-          >
-            <ImageBox px={15} place={4}>
-              <Img
-                fluid={data.workshop.childImageSharp.fluid}
-                alt="Bhangra sway workshops"
-              />
-            </ImageBox>
-            <TextBox px={15} mb="1em" place={4}>
-              <Text
-                color="#000"
-                fontSize="2em"
-                fontWeight={600}
-                lineHeight="1.5em"
-                textAlign="center"
-              >
-                We give Workshops
-              </Text>
-            </TextBox>
-          </Flex>
-
-          <Flex
-            pt="2em"
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-          >
-            <Box px={15} flex="0 0 100%">
-              <Text
-                color="#000"
-                fontSize="2em"
-                fontWeight={600}
-                lineHeight="1.5em"
-                textAlign="center"
-                mb="1rem"
-              >
-                We are Bhangra Sway Family
-              </Text>
-
-              <Img
-                fluid={data.family.childImageSharp.fluid}
-                alt="Bhangra Sway Family"
-              />
-            </Box>
-          </Flex>
-        </Box>
-      </Box>
+            <Img
+              fluid={data.family.childImageSharp.fluid}
+              alt="Bhangra Sway Family"
+            />
+          </Box>
+        </Flex>
+      </Container>
     </Box>
   )
 }
