@@ -1,8 +1,8 @@
 import React from "react"
 import { Box, Text, Flex } from "rebass"
 import styled from "styled-components"
-import HeroVideo from "../data/video.mp4"
-import cover from "../data/gallery/cover.jpg"
+// import HeroVideo from "../data/video.mp4"
+import cover from "../data/gallery/cover-resized.jpg"
 import { Facebook, Instagram, Youtube } from "styled-icons/feather"
 import { FacebookUrl, InstagramUrl, YoutubeUrl } from "../constants"
 
@@ -19,7 +19,7 @@ const StyledVideo = styled.video`
 class Hero2 extends React.Component {
   constructor(props) {
     super(props)
-    this.videoElement = React.createRef()
+    // this.videoElement = React.createRef()
   }
 
   render() {
@@ -49,13 +49,12 @@ class Hero2 extends React.Component {
             textAlign: "center",
           }}
         >
-          <Box>
+          <Box color="white">
             <Text
               textAlign="center"
               fontSize={55}
               lineHeight="1.2em"
               fontWeight={600}
-              color="white"
               mb={30}
             >
               Bhangra Sway
@@ -65,7 +64,6 @@ class Hero2 extends React.Component {
               fontSize={20}
               lineHeight="2em"
               fontWeight={300}
-              color="white"
             >
               Want to learn Bhangra?
             </Text>
@@ -74,7 +72,6 @@ class Hero2 extends React.Component {
               fontSize={20}
               lineHeight="2em"
               fontWeight={300}
-              color="white"
               mb={150}
             >
               Welcome to the Gurgaon's best Bhangra Academy!
@@ -112,19 +109,19 @@ class Hero2 extends React.Component {
             backgroundPosition: "center",
           }}
         >
-          <StyledVideo className="video-bg" muted loop ref={this.videoElement}>
+          {/* <StyledVideo className="video-bg" muted loop ref={this.videoElement}>
             <source src={HeroVideo} type="video/mp4"></source>
-          </StyledVideo>
+          </StyledVideo> */}
         </Box>
       </Box>
     )
   }
 
-  componentDidMount() {
-    this.videoElement.current.addEventListener("canplaythrough", () => {
-      this.videoElement.current.play()
-    })
-  }
+  // componentDidMount() {
+  //   this.videoElement.current.addEventListener("canplaythrough", () => {
+  //     this.videoElement.current.play()
+  //   })
+  // }
 }
 
 export default Hero2
