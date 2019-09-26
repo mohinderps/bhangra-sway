@@ -9,9 +9,20 @@ const ImageBox = styled(Box)`
   flex: 0 0 100%;
   order: 2;
 
-  @media (min-width: 576px) {
-    flex: 0 0 55%;
+  @media (min-width: 768px) {
     order: ${props => (props.place % 2 === 0 ? 2 : 1)};
+  }
+
+  @media (min-width: 768px) {
+    flex: 0 0 65%;
+  }
+
+  @media (min-width: 992px) {
+    flex: 0 0 60%;
+  }
+
+  @media (min-width: 1200px) {
+    flex: 0 0 55%;
   }
 `
 
@@ -20,10 +31,31 @@ const TextBox = styled(Box)`
   order: 1;
   text-align: center;
 
-  @media (min-width: 576px) {
-    flex: 0 0 45%;
+  @media (min-width: 768px) {
     order: ${props => (props.place % 2 === 0 ? 1 : 2)};
     text-align: ${props => (props.place % 2 === 0 ? "right" : "left")};
+  }
+
+  @media (min-width: 768px) {
+    flex: 0 0 35%;
+  }
+
+  @media (min-width: 992px) {
+    flex: 0 0 40%;
+  }
+
+  @media (min-width: 1200px) {
+    flex: 0 0 45%;
+  }
+`
+
+const ShowcaseRow = styled(Flex)`
+  padding-bottom: 2em;
+  padding-top: 2em;
+
+  @media (min-width: 576px) {
+    padding-bottom: 4em;
+    padding-top: 4em;
   }
 `
 
@@ -71,10 +103,9 @@ const Showcase = () => {
   return (
     <Box py={70}>
       <Container>
-        <Flex
+        <ShowcaseRow
           ml={-15}
           mr={-15}
-          pb="2em"
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -96,14 +127,13 @@ const Showcase = () => {
               We Participate in Competitions
             </Text>
           </TextBox>
-        </Flex>
+        </ShowcaseRow>
       </Container>
 
       <Container>
-        <Flex
+        <ShowcaseRow
           ml={-15}
           mr={-15}
-          py="2em"
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -125,14 +155,13 @@ const Showcase = () => {
               We Celebrate Festivals
             </Text>
           </TextBox>
-        </Flex>
+        </ShowcaseRow>
       </Container>
 
       <Container>
-        <Flex
+        <ShowcaseRow
           ml={-15}
           mr={-15}
-          py="2em"
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -154,14 +183,13 @@ const Showcase = () => {
               We Perform in Events
             </Text>
           </TextBox>
-        </Flex>
+        </ShowcaseRow>
       </Container>
 
       <Container>
-        <Flex
+        <ShowcaseRow
           ml={-15}
           mr={-15}
-          py="2em"
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -183,14 +211,13 @@ const Showcase = () => {
               We give Workshops
             </Text>
           </TextBox>
-        </Flex>
+        </ShowcaseRow>
       </Container>
 
       <Container>
-        <Flex
+        <ShowcaseRow
           ml={-15}
           mr={-15}
-          pt="2em"
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -212,7 +239,7 @@ const Showcase = () => {
               alt="Bhangra Sway Family"
             />
           </Box>
-        </Flex>
+        </ShowcaseRow>
       </Container>
     </Box>
   )

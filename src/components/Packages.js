@@ -9,6 +9,10 @@ const PackageBox = styled(Box)`
   flex: 0 0 100%;
 
   @media (min-width: 576px) {
+    flex: 0 0 50%;
+  }
+
+  @media (min-width: 992px) {
     flex: 0 0 25%;
   }
 `

@@ -8,7 +8,7 @@ import Container from "../common/Container"
 const ReviewBox = styled(Box)`
   flex: 0 0 100%;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     flex: 0 0 50%;
   }
 `

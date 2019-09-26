@@ -17,6 +17,22 @@ import { Whatsapp } from "styled-icons/boxicons-logos"
 //   object-fit: cover;
 // `
 
+const HeadingText = styled(Text)`
+  font-size: 45px;
+
+  @media (min-width: 576px) {
+    font-size: 55px;
+  }
+`
+
+const SubheadingText = styled(Text)`
+  font-size: 18px;
+
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+`
+
 const BookButton = styled.button`
   background-color: #1fa178 !important;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -67,32 +83,29 @@ class Hero2 extends React.Component {
           }}
         >
           <Box color="white">
-            <Text
+            <HeadingText
               textAlign="center"
-              fontSize={55}
               lineHeight="1.2em"
               fontWeight={600}
               mb={30}
             >
               Bhangra Sway
-            </Text>
-            <Text
+            </HeadingText>
+            <SubheadingText
               textAlign="center"
-              fontSize={20}
               lineHeight="2em"
               fontWeight={300}
             >
               Want to learn Bhangra?
-            </Text>
-            <Text
+            </SubheadingText>
+            <SubheadingText
               textAlign="center"
-              fontSize={20}
               lineHeight="2em"
               fontWeight={300}
               mb={50}
             >
               Welcome to the Gurgaon's best Bhangra Academy!
-            </Text>
+            </SubheadingText>
             <Flex justifyContent="center" alignItems="center" mb={75}>
               <Box mx={20}>
                 <a

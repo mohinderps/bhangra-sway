@@ -9,7 +9,7 @@ import Container from "../common/Container"
 const MapBox = styled(Box)`
   flex: 0 0 100%;
 
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     flex: 0 0 70%;
   }
 `
@@ -17,7 +17,7 @@ const MapBox = styled(Box)`
 const AddressBox = styled(Box)`
   flex: 0 0 100%;
 
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     flex: 0 0 30%;
   }
 `
