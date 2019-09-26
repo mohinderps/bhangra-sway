@@ -6,15 +6,15 @@ import cover from "../data/gallery/cover-resized.jpg"
 import { Facebook, Instagram, Youtube } from "styled-icons/feather"
 import { FacebookUrl, InstagramUrl, YoutubeUrl } from "../constants"
 
-const StyledVideo = styled.video`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-`
+// const StyledVideo = styled.video`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   object-fit: cover;
+// `
 
 class Hero2 extends React.Component {
   constructor(props) {
